@@ -10,22 +10,22 @@ const Product = () => {
   }, []);
 
   const cards = products.map((product) => (
-    <div className="col-md-3" style={{marginBottom:'10px'}}>
-      <div class="card" className="h-100" style={{ width: "18rem" }} >
-        <div className="text-center">
+    <div className="col-md-3 mb-4" style={{ marginBottom: "10px" }}>
+      <div className="card h-100" style={{ width: "18rem" }}>
+        <div className="text-center mt-3">
           <img
-            class="card-img-top"
+            className="card-img-top"
             src={product.image}
             style={{ width: "100px", height: "130px" }}
             alt="Card image cap"
           />
         </div>
-        <div class="card-body">
-          <h5 class="card-title">{product.title}</h5>
-          <p class="card-text">
-            {product.price}
-          </p>
-          <a href="#" class="btn btn-primary">
+        <div className="card-body">
+          <h5 className="card-title">{product.title}</h5>
+          <p className="card-text">{product.price}</p>
+        </div>
+        <div className="card-footer" style={{ background:'gray' }}>
+          <a href="#" className="btn btn-primary">
             Add to Cart
           </a>
         </div>
