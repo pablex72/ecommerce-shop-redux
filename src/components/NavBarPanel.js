@@ -29,7 +29,7 @@ const NavBar = () => {
           </ul>
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">
+              <a className="nav-link active" aria-current="page" href="/cart">
                 MY Bag 0
               </a>
             </li>
